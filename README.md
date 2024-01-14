@@ -68,3 +68,6 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 Dependencies
 laravel/breeze for autentication and login
+
+Testing
+Phptest
