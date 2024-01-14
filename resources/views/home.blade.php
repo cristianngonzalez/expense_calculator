@@ -21,8 +21,6 @@
     </head>
     <body>
 
-        
-
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Expense Calculator</a>
@@ -31,11 +29,9 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
+                    <!-- Authentication Links -------------------->
                     @if (Route::has('login'))
-                        
                         @auth
-
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ url('/dashboard') }}">Dashboard</a>
                             </li>
@@ -49,19 +45,12 @@
                             </li>
                         @endif
                         @endauth
-
-                    @endif
-
-
-                  
+                    @endif 
+                    <!--End Authentication Links -------------------->                 
                 </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
               </div>
             </div>
-          </nav>
+        </nav>
 
         <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
             
